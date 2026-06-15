@@ -1,0 +1,66 @@
+# Daily iOS interview-prep digest → GitHub Pages
+#
+# Schedule: 13:30 UTC every weekday (Mon-Fri).
+#   GitHub cron runs in UTC and does not adjust for DST.
+#   13:30 UTC ≈ 8:30 AM Central (CDT, UTC-5) in summer
+#               7:30 AM Central (CST, UTC-6) in winter
+#   Adjust the cron expression to taste if you want a different local time.
+
+name: Daily Prep Digest
+
+on:
+  schedule:
+    - cron: "30 13 * * 1-5"
+
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Print digest to logs but skip deploying to Pages"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate digest
+        env:
+          START_DATE: ${{ vars.START_DATE }}
+          OUTPUT_FILE: _site/index.html
+          # DRY_RUN is only set on manual runs where the checkbox is true.
+          # For scheduled runs github.event.inputs.dry_run is empty → live deploy.
+          DRY_RUN: ${{ github.event.inputs.dry_run }}
+        run: python digest.py
+
+      - name: Upload Pages artifact
+        # Skip on manual dry-run so we don't deploy a test page over the live one.
+        if: github.event.inputs.dry_run != 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        if: github.event.inputs.dry_run != 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

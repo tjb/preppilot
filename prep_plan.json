@@ -1,0 +1,1381 @@
+{
+  "meta": {
+    "title": "iOS Staff/Senior Interview Prep",
+    "owner": "Tyler",
+    "track": "iOS (Senior \u2192 Staff)",
+    "weeks": 12,
+    "active_days_per_week": 5,
+    "leetcode_total": 116,
+    "notes": "Mon/Wed = pure LeetCode. Tue = study the iOS topic. Thu = self-quiz the topic. Fri = LeetCode + a mobile system-design whiteboard. Sat/Sun = catch-up / re-attempt anything you missed."
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "theme": "Arrays & Hashing",
+      "ios_topic": "Swift fundamentals: value vs reference semantics",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Contains Duplicate",
+              "slug": "contains-duplicate",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/contains-duplicate/"
+            },
+            {
+              "name": "Valid Anagram",
+              "slug": "valid-anagram",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/valid-anagram/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Two Sum",
+              "slug": "two-sum",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/two-sum/"
+            },
+            {
+              "name": "Group Anagrams",
+              "slug": "group-anagrams",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/group-anagrams/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "Swift fundamentals: value vs reference semantics",
+            "task": "Study & take notes: Swift fundamentals: value vs reference semantics."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Top K Frequent Elements",
+              "slug": "top-k-frequent-elements",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/top-k-frequent-elements/"
+            },
+            {
+              "name": "Product of Array Except Self",
+              "slug": "product-of-array-except-self",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/product-of-array-except-self/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Valid Sudoku",
+              "slug": "valid-sudoku",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/valid-sudoku/"
+            },
+            {
+              "name": "Encode and Decode Strings",
+              "slug": "encode-and-decode-strings",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/encode-and-decode-strings/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "Swift fundamentals: value vs reference semantics",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "When does a struct get copied vs shared? Walk through what happens when you pass a struct into a function and mutate it.",
+              "Explain how Swift's copy-on-write works for Array/Dictionary. Why does it matter for performance?",
+              "Optionals: contrast `if let`, `guard let`, `??`, and optional chaining. When is force-unwrap ever acceptable?",
+              "Why are most of Swift's standard collections value types? What problems does that prevent?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Longest Consecutive Sequence",
+              "slug": "longest-consecutive-sequence",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "Swift fundamentals: value vs reference semantics",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Design the data model for Whenish's event/availability core using value types. Where would you intentionally reach for a reference type and why?"
+          }
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "theme": "Two Pointers & Sliding Window",
+      "ios_topic": "ARC & memory management",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Valid Palindrome",
+              "slug": "valid-palindrome",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/valid-palindrome/"
+            },
+            {
+              "name": "Two Sum II - Input Array Is Sorted",
+              "slug": "two-sum-ii-input-array-is-sorted",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "3Sum",
+              "slug": "3sum",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/3sum/"
+            },
+            {
+              "name": "Container With Most Water",
+              "slug": "container-with-most-water",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/container-with-most-water/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "ARC & memory management",
+            "task": "Study & take notes: ARC & memory management."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Best Time to Buy and Sell Stock",
+              "slug": "best-time-to-buy-and-sell-stock",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+            },
+            {
+              "name": "Longest Substring Without Repeating Characters",
+              "slug": "longest-substring-without-repeating-characters",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Longest Repeating Character Replacement",
+              "slug": "longest-repeating-character-replacement",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/longest-repeating-character-replacement/"
+            },
+            {
+              "name": "Permutation in String",
+              "slug": "permutation-in-string",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/permutation-in-string/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "ARC & memory management",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "Explain a retain cycle. Draw the object graph for a closure capturing self inside a view model.",
+              "weak vs unowned: when is each correct, and what crashes if you pick wrong?",
+              "What does a capture list `[weak self]` actually do at the bytecode level?",
+              "How do you detect leaks in a running app? Which Instruments template, and what are you looking at?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Trapping Rain Water",
+              "slug": "trapping-rain-water",
+              "difficulty": "Hard",
+              "url": "https://leetcode.com/problems/trapping-rain-water/"
+            },
+            {
+              "name": "Minimum Window Substring",
+              "slug": "minimum-window-substring",
+              "difficulty": "Hard",
+              "url": "https://leetcode.com/problems/minimum-window-substring/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "ARC & memory management",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "A view controller holds a network client that holds a completion handler that references the VC. Diagram the cycle and fix it three different ways."
+          }
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "theme": "Stack & Binary Search",
+      "ios_topic": "Swift Concurrency: async/await, actors, Sendable",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Valid Parentheses",
+              "slug": "valid-parentheses",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/valid-parentheses/"
+            },
+            {
+              "name": "Min Stack",
+              "slug": "min-stack",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/min-stack/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Evaluate Reverse Polish Notation",
+              "slug": "evaluate-reverse-polish-notation",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/"
+            },
+            {
+              "name": "Daily Temperatures",
+              "slug": "daily-temperatures",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/daily-temperatures/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "Swift Concurrency: async/await, actors, Sendable",
+            "task": "Study & take notes: Swift Concurrency: async/await, actors, Sendable."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Car Fleet",
+              "slug": "car-fleet",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/car-fleet/"
+            },
+            {
+              "name": "Binary Search",
+              "slug": "binary-search",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/binary-search/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Search a 2D Matrix",
+              "slug": "search-a-2d-matrix",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/search-a-2d-matrix/"
+            },
+            {
+              "name": "Koko Eating Bananas",
+              "slug": "koko-eating-bananas",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/koko-eating-bananas/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "Swift Concurrency: async/await, actors, Sendable",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "Explain structured concurrency. What does a `TaskGroup` guarantee that a bunch of detached Tasks doesn't?",
+              "What is an actor, and what specific class of bug does it eliminate? What does it NOT protect against?",
+              "What does `@MainActor` do to a function or type? How does isolation get inferred?",
+              "What is `Sendable` and why did the compiler start yelling about it? Give an example of a non-Sendable type crossing an isolation boundary."
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Find Minimum in Rotated Sorted Array",
+              "slug": "find-minimum-in-rotated-sorted-array",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+            },
+            {
+              "name": "Search in Rotated Sorted Array",
+              "slug": "search-in-rotated-sorted-array",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "Swift Concurrency: async/await, actors, Sendable",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Design the concurrency model for a feed that loads from network, caches to disk, and updates UI. Mark the actor boundaries."
+          }
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "theme": "Linked Lists",
+      "ios_topic": "GCD, threading, and the main actor",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Reverse Linked List",
+              "slug": "reverse-linked-list",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/reverse-linked-list/"
+            },
+            {
+              "name": "Merge Two Sorted Lists",
+              "slug": "merge-two-sorted-lists",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/merge-two-sorted-lists/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Linked List Cycle",
+              "slug": "linked-list-cycle",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/linked-list-cycle/"
+            },
+            {
+              "name": "Reorder List",
+              "slug": "reorder-list",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/reorder-list/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "GCD, threading, and the main actor",
+            "task": "Study & take notes: GCD, threading, and the main actor."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Remove Nth Node From End of List",
+              "slug": "remove-nth-node-from-end-of-list",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/"
+            },
+            {
+              "name": "Copy List with Random Pointer",
+              "slug": "copy-list-with-random-pointer",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/copy-list-with-random-pointer/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Add Two Numbers",
+              "slug": "add-two-numbers",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/add-two-numbers/"
+            },
+            {
+              "name": "Find the Duplicate Number",
+              "slug": "find-the-duplicate-number",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/find-the-duplicate-number/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "GCD, threading, and the main actor",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "Compare GCD queues to Swift Concurrency. When would you still reach for GCD in 2026?",
+              "What is a data race vs a race condition? Give a concrete example of each in iOS code.",
+              "Serial vs concurrent queues, sync vs async \u2014 predict the output/deadlock for a tricky snippet.",
+              "What runs on the main thread and why does blocking it cause hitches? How many ms is your budget per frame?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "LRU Cache",
+              "slug": "lru-cache",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/lru-cache/"
+            },
+            {
+              "name": "Merge k Sorted Lists",
+              "slug": "merge-k-sorted-lists",
+              "difficulty": "Hard",
+              "url": "https://leetcode.com/problems/merge-k-sorted-lists/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "GCD, threading, and the main actor",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "You're seeing UI freezes during image decoding. Walk through diagnosis and the threading fix end to end."
+          }
+        }
+      ]
+    },
+    {
+      "week": 5,
+      "theme": "Trees",
+      "ios_topic": "SwiftUI rendering & state",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Invert Binary Tree",
+              "slug": "invert-binary-tree",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/invert-binary-tree/"
+            },
+            {
+              "name": "Maximum Depth of Binary Tree",
+              "slug": "maximum-depth-of-binary-tree",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Diameter of Binary Tree",
+              "slug": "diameter-of-binary-tree",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/diameter-of-binary-tree/"
+            },
+            {
+              "name": "Balanced Binary Tree",
+              "slug": "balanced-binary-tree",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/balanced-binary-tree/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "SwiftUI rendering & state",
+            "task": "Study & take notes: SwiftUI rendering & state."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Same Tree",
+              "slug": "same-tree",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/same-tree/"
+            },
+            {
+              "name": "Subtree of Another Tree",
+              "slug": "subtree-of-another-tree",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/subtree-of-another-tree/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Lowest Common Ancestor of a BST",
+              "slug": "lowest-common-ancestor-of-a-binary-search-tree",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/"
+            },
+            {
+              "name": "Binary Tree Level Order Traversal",
+              "slug": "binary-tree-level-order-traversal",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "SwiftUI rendering & state",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "Explain view identity and how SwiftUI decides to re-render. What is the role of `id`?",
+              "@State vs @Binding vs @Observable vs @Environment \u2014 pick the right one for four scenarios.",
+              "Why can a struct `body` be called many times per second, and what must you NOT do in it?",
+              "What causes 'view is not updating' bugs? List three root causes you've actually hit."
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Validate Binary Search Tree",
+              "slug": "validate-binary-search-tree",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/validate-binary-search-tree/"
+            },
+            {
+              "name": "Kth Smallest Element in a BST",
+              "slug": "kth-smallest-element-in-a-bst",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "SwiftUI rendering & state",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Design the state architecture for SpellSlot's tracker screen so widgets, the app, and StoreKit entitlement all stay in sync."
+          }
+        }
+      ]
+    },
+    {
+      "week": 6,
+      "theme": "Tries & Heaps",
+      "ios_topic": "SwiftUI / UIKit interop",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Implement Trie (Prefix Tree)",
+              "slug": "implement-trie-prefix-tree",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/implement-trie-prefix-tree/"
+            },
+            {
+              "name": "Design Add and Search Words Data Structure",
+              "slug": "design-add-and-search-words-data-structure",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Word Search II",
+              "slug": "word-search-ii",
+              "difficulty": "Hard",
+              "url": "https://leetcode.com/problems/word-search-ii/"
+            },
+            {
+              "name": "Kth Largest Element in a Stream",
+              "slug": "kth-largest-element-in-a-stream",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "SwiftUI / UIKit interop",
+            "task": "Study & take notes: SwiftUI / UIKit interop."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Last Stone Weight",
+              "slug": "last-stone-weight",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/last-stone-weight/"
+            },
+            {
+              "name": "K Closest Points to Origin",
+              "slug": "k-closest-points-to-origin",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/k-closest-points-to-origin/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Kth Largest Element in an Array",
+              "slug": "kth-largest-element-in-an-array",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+            },
+            {
+              "name": "Task Scheduler",
+              "slug": "task-scheduler",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/task-scheduler/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "SwiftUI / UIKit interop",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "When do you drop to UIKit in a SwiftUI app in 2026? Name real cases.",
+              "How do UIViewRepresentable / UIHostingController bridge the two worlds? What's the lifecycle gotcha?",
+              "How does the SwiftUI data flow cross into a wrapped UIKit view and back?",
+              "What are the performance tradeoffs of mixing the two in a scrolling list?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Find Median from Data Stream",
+              "slug": "find-median-from-data-stream",
+              "difficulty": "Hard",
+              "url": "https://leetcode.com/problems/find-median-from-data-stream/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "SwiftUI / UIKit interop",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "You need a custom high-performance text editor inside a SwiftUI screen. Design the bridge and the data sync."
+          }
+        }
+      ]
+    },
+    {
+      "week": 7,
+      "theme": "Backtracking",
+      "ios_topic": "App architecture & modularization",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Subsets",
+              "slug": "subsets",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/subsets/"
+            },
+            {
+              "name": "Combination Sum",
+              "slug": "combination-sum",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/combination-sum/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Permutations",
+              "slug": "permutations",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/permutations/"
+            },
+            {
+              "name": "Subsets II",
+              "slug": "subsets-ii",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/subsets-ii/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "App architecture & modularization",
+            "task": "Study & take notes: App architecture & modularization."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Combination Sum II",
+              "slug": "combination-sum-ii",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/combination-sum-ii/"
+            },
+            {
+              "name": "Word Search",
+              "slug": "word-search",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/word-search/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Palindrome Partitioning",
+              "slug": "palindrome-partitioning",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/palindrome-partitioning/"
+            },
+            {
+              "name": "Letter Combinations of a Phone Number",
+              "slug": "letter-combinations-of-a-phone-number",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "App architecture & modularization",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "MVVM vs unidirectional (TCA-style) \u2014 what does each buy you, and where does MVVM break down at scale?",
+              "How do you do dependency injection in Swift without a heavy framework? Show your preferred pattern.",
+              "How would you split a 200k-line app into modules/packages? What goes in the boundary?",
+              "How do you keep navigation testable and decoupled from views?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Generate Parentheses",
+              "slug": "generate-parentheses",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/generate-parentheses/"
+            },
+            {
+              "name": "N-Queens",
+              "slug": "n-queens",
+              "difficulty": "Hard",
+              "url": "https://leetcode.com/problems/n-queens/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "App architecture & modularization",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Architect a mid-size app (auth, feed, profile, offline) into SPM modules. Draw the dependency graph and the rule that prevents cycles."
+          }
+        }
+      ]
+    },
+    {
+      "week": 8,
+      "theme": "Graphs",
+      "ios_topic": "Persistence: SwiftData & Core Data",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Number of Islands",
+              "slug": "number-of-islands",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/number-of-islands/"
+            },
+            {
+              "name": "Max Area of Island",
+              "slug": "max-area-of-island",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/max-area-of-island/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Clone Graph",
+              "slug": "clone-graph",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/clone-graph/"
+            },
+            {
+              "name": "Rotting Oranges",
+              "slug": "rotting-oranges",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/rotting-oranges/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "Persistence: SwiftData & Core Data",
+            "task": "Study & take notes: Persistence: SwiftData & Core Data."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Pacific Atlantic Water Flow",
+              "slug": "pacific-atlantic-water-flow",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/pacific-atlantic-water-flow/"
+            },
+            {
+              "name": "Surrounded Regions",
+              "slug": "surrounded-regions",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/surrounded-regions/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Course Schedule",
+              "slug": "course-schedule",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/course-schedule/"
+            },
+            {
+              "name": "Course Schedule II",
+              "slug": "course-schedule-ii",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/course-schedule-ii/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "Persistence: SwiftData & Core Data",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "SwiftData vs Core Data in 2026 \u2014 when do you still choose Core Data?",
+              "Walk through a schema migration. What breaks if you get it wrong and how do you ship it safely?",
+              "How do you handle concurrent writes / merge conflicts? What's the threading model?",
+              "How do you model a sync-able local store (offline-first)? Where do conflicts get resolved?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Number of Connected Components in an Undirected Graph",
+              "slug": "number-of-connected-components-in-an-undirected-graph",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/"
+            },
+            {
+              "name": "Graph Valid Tree",
+              "slug": "graph-valid-tree",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/graph-valid-tree/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "Persistence: SwiftData & Core Data",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Design offline-first persistence + sync for a note-taking app. Cover conflict resolution and migration strategy."
+          }
+        }
+      ]
+    },
+    {
+      "week": 9,
+      "theme": "Advanced Graphs & 1-D DP",
+      "ios_topic": "Networking",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Min Cost to Connect All Points",
+              "slug": "min-cost-to-connect-all-points",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/"
+            },
+            {
+              "name": "Network Delay Time",
+              "slug": "network-delay-time",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/network-delay-time/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Cheapest Flights Within K Stops",
+              "slug": "cheapest-flights-within-k-stops",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+            },
+            {
+              "name": "Climbing Stairs",
+              "slug": "climbing-stairs",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/climbing-stairs/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "Networking",
+            "task": "Study & take notes: Networking."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Min Cost Climbing Stairs",
+              "slug": "min-cost-climbing-stairs",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/min-cost-climbing-stairs/"
+            },
+            {
+              "name": "House Robber",
+              "slug": "house-robber",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/house-robber/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "House Robber II",
+              "slug": "house-robber-ii",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/house-robber-ii/"
+            },
+            {
+              "name": "Longest Palindromic Substring",
+              "slug": "longest-palindromic-substring",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/longest-palindromic-substring/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "Networking",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "Design a typed networking layer over URLSession with async/await. What are the seams for testing?",
+              "How do you handle retries, timeouts, and cancellation correctly?",
+              "Caching: URLCache vs your own layer vs ETag/conditional requests \u2014 pick and justify.",
+              "How do you paginate a feed without dropping or duplicating items under fast scrolling?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Palindromic Substrings",
+              "slug": "palindromic-substrings",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/palindromic-substrings/"
+            },
+            {
+              "name": "Coin Change",
+              "slug": "coin-change",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/coin-change/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "Networking",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Design the full networking + caching stack for a feed app, including auth token refresh under concurrent requests."
+          }
+        }
+      ]
+    },
+    {
+      "week": 10,
+      "theme": "1-D & 2-D Dynamic Programming",
+      "ios_topic": "Performance & Instruments",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Maximum Product Subarray",
+              "slug": "maximum-product-subarray",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/maximum-product-subarray/"
+            },
+            {
+              "name": "Word Break",
+              "slug": "word-break",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/word-break/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Longest Increasing Subsequence",
+              "slug": "longest-increasing-subsequence",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/longest-increasing-subsequence/"
+            },
+            {
+              "name": "Partition Equal Subset Sum",
+              "slug": "partition-equal-subset-sum",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/partition-equal-subset-sum/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "Performance & Instruments",
+            "task": "Study & take notes: Performance & Instruments."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Unique Paths",
+              "slug": "unique-paths",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/unique-paths/"
+            },
+            {
+              "name": "Longest Common Subsequence",
+              "slug": "longest-common-subsequence",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/longest-common-subsequence/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Coin Change II",
+              "slug": "coin-change-ii",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/coin-change-ii/"
+            },
+            {
+              "name": "Target Sum",
+              "slug": "target-sum",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/target-sum/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "Performance & Instruments",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "What causes main-thread hitches and how do you find them in Instruments? Which template?",
+              "Walk through optimizing an image-heavy scrolling list: decoding, downsampling, prefetch, reuse.",
+              "How do you measure and reduce app launch time? Cold vs warm.",
+              "How do you find and fix excessive allocations / memory growth?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Decode Ways",
+              "slug": "decode-ways",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/decode-ways/"
+            },
+            {
+              "name": "Edit Distance",
+              "slug": "edit-distance",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/edit-distance/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "Performance & Instruments",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "An app drops frames scrolling a photo grid and uses 600MB RAM. Give your full diagnosis-to-fix plan."
+          }
+        }
+      ]
+    },
+    {
+      "week": 11,
+      "theme": "Greedy, Intervals & Bit Manipulation",
+      "ios_topic": "Testing & CI",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Maximum Subarray",
+              "slug": "maximum-subarray",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/maximum-subarray/"
+            },
+            {
+              "name": "Jump Game",
+              "slug": "jump-game",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/jump-game/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Jump Game II",
+              "slug": "jump-game-ii",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/jump-game-ii/"
+            },
+            {
+              "name": "Gas Station",
+              "slug": "gas-station",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/gas-station/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "Testing & CI",
+            "task": "Study & take notes: Testing & CI."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Insert Interval",
+              "slug": "insert-interval",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/insert-interval/"
+            },
+            {
+              "name": "Merge Intervals",
+              "slug": "merge-intervals",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/merge-intervals/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Non-overlapping Intervals",
+              "slug": "non-overlapping-intervals",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/non-overlapping-intervals/"
+            },
+            {
+              "name": "Meeting Rooms II",
+              "slug": "meeting-rooms-ii",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/meeting-rooms-ii/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "Testing & CI",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "What do you actually unit test in an iOS app vs what you don't? Where's the line?",
+              "How do you make networking, persistence, and time testable? Show the seams.",
+              "Snapshot/UI tests \u2014 when are they worth the flakiness cost?",
+              "Sketch a CI pipeline (build, test, sign, ship) with fastlane. What gates a merge?"
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Single Number",
+              "slug": "single-number",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/single-number/"
+            },
+            {
+              "name": "Number of 1 Bits",
+              "slug": "number-of-1-bits",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/number-of-1-bits/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "Testing & CI",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Design a CI/CD pipeline for an indie app shipping weekly: PR gates, test strategy, automated TestFlight + App Store release."
+          }
+        }
+      ]
+    },
+    {
+      "week": 12,
+      "theme": "Math, Matrix & Mock Review",
+      "ios_topic": "Mobile system design synthesis",
+      "days": [
+        {
+          "day": "Mon",
+          "leetcode": [
+            {
+              "name": "Rotate Image",
+              "slug": "rotate-image",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/rotate-image/"
+            },
+            {
+              "name": "Spiral Matrix",
+              "slug": "spiral-matrix",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/spiral-matrix/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Tue",
+          "leetcode": [
+            {
+              "name": "Set Matrix Zeroes",
+              "slug": "set-matrix-zeroes",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/set-matrix-zeroes/"
+            },
+            {
+              "name": "Pow(x, n)",
+              "slug": "powx-n",
+              "difficulty": "Medium",
+              "url": "https://leetcode.com/problems/powx-n/"
+            }
+          ],
+          "ios": {
+            "type": "study",
+            "topic": "Mobile system design synthesis",
+            "task": "Study & take notes: Mobile system design synthesis."
+          }
+        },
+        {
+          "day": "Wed",
+          "leetcode": [
+            {
+              "name": "Happy Number",
+              "slug": "happy-number",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/happy-number/"
+            },
+            {
+              "name": "Counting Bits",
+              "slug": "counting-bits",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/counting-bits/"
+            }
+          ],
+          "ios": null
+        },
+        {
+          "day": "Thu",
+          "leetcode": [
+            {
+              "name": "Missing Number",
+              "slug": "missing-number",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/missing-number/"
+            }
+          ],
+          "ios": {
+            "type": "quiz",
+            "topic": "Mobile system design synthesis",
+            "task": "Answer these out loud without notes, then check:",
+            "questions": [
+              "Run a full mobile system design: design a feed app (Twitter-lite) end to end \u2014 data flow, caching, offline, sync.",
+              "Design an offline-first sync engine. How do you resolve conflicts and handle schema evolution?",
+              "Design image upload + processing at scale from the client's perspective.",
+              "Talk through scaling a SwiftUI app's architecture as the team grows from 1 to 20 engineers (your EM edge \u2014 use it)."
+            ]
+          }
+        },
+        {
+          "day": "Fri",
+          "leetcode": [
+            {
+              "name": "Plus One",
+              "slug": "plus-one",
+              "difficulty": "Easy",
+              "url": "https://leetcode.com/problems/plus-one/"
+            }
+          ],
+          "ios": {
+            "type": "system_design",
+            "topic": "Mobile system design synthesis",
+            "task": "Whiteboard this for ~30 min:",
+            "prompt": "Pick one of this week's prompts and do a clean 45-minute mock as if it's a Staff loop. Record yourself."
+          }
+        }
+      ]
+    }
+  ]
+}
