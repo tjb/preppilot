@@ -16,6 +16,14 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 PLAN_PATH = Path(__file__).parent / "prep_plan.json"
+
+def _load_lessons() -> dict:
+    try:
+        sys.path.insert(0, str(Path(__file__).parent))
+        from lessons import LESSONS
+        return LESSONS
+    except ImportError:
+        return {}
 DIFFICULTY_COLOR = {
     "Easy":   ("#16a34a", "#dcfce7"),
     "Medium": ("#d97706", "#fef3c7"),
@@ -100,6 +108,62 @@ def badge(difficulty: str) -> str:
     )
 
 
+def _render_lesson_html(week_num: int) -> str:
+    lessons = _load_lessons()
+    lesson  = lessons.get(week_num)
+    if not lesson:
+        return ""
+
+    html = []
+
+    # Overview
+    html.append(
+        f'<div style="background:#f0fdf4;border-left:4px solid #16a34a;padding:14px 18px;'
+        f'border-radius:6px;margin-bottom:20px;font-size:14px;color:#14532d;">'
+        f'{lesson["overview"]}</div>'
+    )
+
+    # Concepts
+    for c in lesson["concepts"]:
+        code_escaped = (c["code"]
+                        .replace("&", "&amp;")
+                        .replace("<", "&lt;")
+                        .replace(">", "&gt;"))
+        tip_html = ""
+        if c.get("tip"):
+            tip_html = (
+                f'<div style="background:#fffbeb;border-left:3px solid #f59e0b;padding:10px 14px;'
+                f'border-radius:4px;margin-top:10px;font-size:13px;color:#78350f;">'
+                f'<strong>Interview tip:</strong> {c["tip"]}</div>'
+            )
+        html.append(
+            f'<div style="margin-bottom:22px;">'
+            f'<h3 style="margin:0 0 6px;font-size:14px;font-weight:700;color:#1e293b;">{c["title"]}</h3>'
+            f'<p style="margin:0 0 10px;font-size:14px;color:#374151;line-height:1.6;">{c["body"]}</p>'
+            f'<pre style="margin:0;background:#1e293b;color:#e2e8f0;font-family:\'SF Mono\',Menlo,monospace;'
+            f'font-size:12.5px;line-height:1.6;padding:14px 16px;border-radius:6px;overflow-x:auto;'
+            f'white-space:pre;">{code_escaped}</pre>'
+            f'{tip_html}'
+            f'</div>'
+        )
+
+    # Try it yourself
+    if lesson.get("try_it"):
+        items = "".join(
+            f'<li style="margin-bottom:8px;font-size:14px;color:#1f2937;">{ex}</li>'
+            for ex in lesson["try_it"]
+        )
+        html.append(
+            f'<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:16px 18px;margin-top:8px;">'
+            f'<p style="margin:0 0 10px;font-size:13px;font-weight:700;color:#475569;'
+            f'text-transform:uppercase;letter-spacing:.05em;">Try it yourself</p>'
+            f'<ol style="margin:0;padding-left:20px;">{items}</ol>'
+            f'</div>'
+        )
+
+    return "\n".join(html)
+
+
 def render_html(plan: dict, idx: int, today: date, week_data: dict, day_data: dict) -> str:
     week_num = idx // 5 + 1
     day_num  = idx + 1
@@ -145,7 +209,9 @@ def render_html(plan: dict, idx: int, today: date, week_data: dict, day_data: di
             f'<p style="margin:0 0 6px;font-size:14px;"><strong>Topic:</strong> {ios["topic"]}</p>'
             f'<p style="margin:0 0 12px;font-size:14px;">{ios["task"]}</p>'
         )
-        if ios["type"] == "quiz" and ios.get("questions"):
+        if ios["type"] == "study":
+            body += _render_lesson_html(week_num)
+        elif ios["type"] == "quiz" and ios.get("questions"):
             qs = "".join(
                 f'<li style="margin-bottom:8px;font-size:14px;color:#1f2937;">{q}</li>'
                 for q in ios["questions"]
